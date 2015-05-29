@@ -1,6 +1,6 @@
 {
   "name": "find-key",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "find value inside nested object from key name",
   "main": "lib/index.js",
   "directories": {
@@ -15,7 +15,7 @@
     "lab": "^5.9.0"
   },
   "scripts": {
-    "test": "lab -a code -v -t 100"
+    "test": "lab -a code -v -L -t 100"
   },
   "repository": {
     "type": "git",

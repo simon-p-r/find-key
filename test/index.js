@@ -33,11 +33,11 @@ describe('Find', function () {
           properties: {
                 format: {type: 'string', format: 'lookup'},
                 extra: {type: 'string', format: 'lookup'},
-                test: {type: 'string', format: {test: 'dbRef'}},
+                test: {type: 'string', format: {test: 'dbRef'}}
           },
           additionaProperties: false,
           format: 'dbRef',
-          title: 'country schema',
+          title: 'country schema'
 
         };
         var result = Find(obj, 'format', []);

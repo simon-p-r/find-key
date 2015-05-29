@@ -3,7 +3,7 @@
 Finds matching value of supplied key inside deep nested object
 
 [![Build Status](https://travis-ci.org/simon-p-r/find-key.svg?branch=master)](https://travis-ci.org/simon-p-r/find-key)
-[![Current Version](https://img.shields.io/npm/v/find-key.svg)](https://www.npmjs.org/package/require-plus)
+[![Current Version](https://img.shields.io/npm/v/find-key.svg)](https://www.npmjs.org/package/find-key)
 ![devDependencies](http://img.shields.io/david/dev/simon-p-r/find-key.svg)
 
 Lead Maintainer - [simon-p-r](https://github.com/simon-p-r)
