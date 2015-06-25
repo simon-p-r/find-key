@@ -16,9 +16,20 @@ var expect = Code.expect;
 var obj = {
   type: 'object',
   properties: {
-        format: {type: 'string', format: 'lookup'},
-        extra: {type: 'string', format: 'lookup'},
-        test: {type: 'string', format: {test: 'dbRef'}}
+        format: {
+            type: 'string',
+            format: 'lookup'
+        },
+        extra: {
+            type: 'string',
+            format: 'lookup'
+        },
+        test: {
+            type: 'string',
+            format: {
+                test: 'dbRef'
+            }
+        }
   },
   additionaProperties: false,
   format: 'dbRef',
@@ -45,18 +56,11 @@ describe('Find', function () {
 
     });
 
-    it('should return undefined if no results array is passed to function', function (done) {
-
-        var result = Find(obj, 'format');
-        expect(result).to.be.undefined();
-        done();
-
-    });
 
     it('should return values matching a key name', function (done) {
 
 
-        var result = Find(obj, 'format', []);
+        var result = Find(obj, 'format');
         expect(result).to.be.an.array();
         expect(result).to.have.length(4);
         done();

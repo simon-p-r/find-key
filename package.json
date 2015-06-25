@@ -1,6 +1,6 @@
 {
   "name": "find-key",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "find value inside nested object from key name",
   "main": "lib/index.js",
   "directories": {
