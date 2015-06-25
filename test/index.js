@@ -13,12 +13,23 @@ var describe = lab.describe;
 var it = lab.it;
 var expect = Code.expect;
 
+var obj = {
+  type: 'object',
+  properties: {
+        format: {type: 'string', format: 'lookup'},
+        extra: {type: 'string', format: 'lookup'},
+        test: {type: 'string', format: {test: 'dbRef'}}
+  },
+  additionaProperties: false,
+  format: 'dbRef',
+  title: 'country schema'
 
+};
 
 
 describe('Find', function () {
 
-    it('should return undefined if no obj is passed to function', function (done) {
+    it('should return undefined if no obj object is passed to function', function (done) {
 
         var result = Find();
         expect(result).to.be.undefined();
@@ -26,20 +37,25 @@ describe('Find', function () {
 
     });
 
+    it('should return undefined if no key string is passed to function', function (done) {
+
+        var result = Find(obj);
+        expect(result).to.be.undefined();
+        done();
+
+    });
+
+    it('should return undefined if no results array is passed to function', function (done) {
+
+        var result = Find(obj, 'format');
+        expect(result).to.be.undefined();
+        done();
+
+    });
+
     it('should return values matching a key name', function (done) {
 
-        var obj = {
-          type: 'object',
-          properties: {
-                format: {type: 'string', format: 'lookup'},
-                extra: {type: 'string', format: 'lookup'},
-                test: {type: 'string', format: {test: 'dbRef'}}
-          },
-          additionaProperties: false,
-          format: 'dbRef',
-          title: 'country schema'
 
-        };
         var result = Find(obj, 'format', []);
         expect(result).to.be.an.array();
         expect(result).to.have.length(4);

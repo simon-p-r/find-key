@@ -6,7 +6,6 @@ Finds matching value of supplied key inside deep nested object
 [![Current Version](https://img.shields.io/npm/v/find-key.svg)](https://www.npmjs.org/package/find-key)
 ![devDependencies](http://img.shields.io/david/dev/simon-p-r/find-key.svg)
 
-Lead Maintainer - [simon-p-r](https://github.com/simon-p-r)
 
 ### Install
 
@@ -15,6 +14,12 @@ Lead Maintainer - [simon-p-r](https://github.com/simon-p-r)
 npm install find-key
 
 ````
+
+### Usage
+
+#### find(object, key, results)
+
+object is the object your are looking for key inside, key is the name of the key your are lookign for and results is an array to store the returned key and values from function
 
 ### Example
 
@@ -35,7 +40,7 @@ var obj = {
 
 };
 
-var res = find(obj, 'format', []);
+var res = Find(obj, 'format', []);
 
 console.log(res); // should equal an array with the following values ['lookup', 'dbRef']
 
