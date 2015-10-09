@@ -14,8 +14,8 @@ var it = lab.it;
 var expect = Code.expect;
 
 var obj = {
-  type: 'object',
-  properties: {
+    type: 'object',
+    properties: {
         format: {
             type: 'string',
             format: 'lookup'
@@ -30,10 +30,10 @@ var obj = {
                 test: 'dbRef'
             }
         }
-  },
-  additionaProperties: false,
-  format: 'dbRef',
-  title: 'country schema'
+    },
+    additionaProperties: false,
+    format: 'dbRef',
+    title: 'country schema'
 
 };
 

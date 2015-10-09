@@ -1,5 +1,7 @@
 ###find-key changelog
 
+v1.0.2 - fixed some lint issues, updated lab, changed results creation and updated travis
+
 v1.0.1 - fixed typos in readme and fixed linting issues for Travis test
 
 v1.0.0 - improved type checking, add soem tests to ensure 100% coverage and tidied documents up
