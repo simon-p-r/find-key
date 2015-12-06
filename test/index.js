@@ -1,19 +1,19 @@
+'use strict';
 
-// Load modules
 
-var Code = require('code');
-var Lab = require('lab');
-var Find = require('../lib/index.js');
+const Code = require('code');
+const Lab = require('lab');
+const Find = require('../lib/index.js');
 
 
 
 // Set-up lab
-var lab = exports.lab = Lab.script();
-var describe = lab.describe;
-var it = lab.it;
-var expect = Code.expect;
+const lab = exports.lab = Lab.script();
+const describe = lab.describe;
+const it = lab.it;
+const expect = Code.expect;
 
-var obj = {
+const obj = {
     type: 'object',
     properties: {
         format: {
@@ -38,33 +38,30 @@ var obj = {
 };
 
 
-describe('Find', function () {
+describe('Find', () => {
 
-    it('should return undefined if no obj object is passed to function', function (done) {
+    it('should return undefined if no obj object is passed to function', (done) => {
 
-        var result = Find();
+        const result = Find();
         expect(result).to.be.undefined();
         done();
 
     });
 
-    it('should return undefined if no key string is passed to function', function (done) {
+    it('should return undefined if no key string is passed to function', (done) => {
 
-        var result = Find(obj);
+        const result = Find(obj);
         expect(result).to.be.undefined();
         done();
 
     });
 
+    it('should return values matching a key name', (done) => {
 
-    it('should return values matching a key name', function (done) {
-
-
-        var result = Find(obj, 'format');
+        const result = Find(obj, 'format');
         expect(result).to.be.an.array();
         expect(result).to.have.length(4);
         done();
-
 
     });
 
