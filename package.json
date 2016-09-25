@@ -8,13 +8,15 @@
   },
   "devDependencies": {
     "code": "^4.0.0",
+    "coveralls": "^2.11.14",
     "lab": "^11.0.1"
   },
   "engines": {
     "node": ">=4.0.0"
   },
   "scripts": {
-    "test": "lab -a code -v -L -t 100"
+    "test": "lab -a code -v -L -t 100",
+    "coveralls": "lab -r lcov | coveralls"
   },
   "repository": {
     "type": "git",

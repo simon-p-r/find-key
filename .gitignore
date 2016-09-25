@@ -1,2 +1,6 @@
 test.js
 node_modules
+.vs
+.vscode 
+.idea
+npm-debug.log
