@@ -1,14 +1,14 @@
 {
   "name": "find-key",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "find value inside nested object from key name",
   "main": "lib/index.js",
   "directories": {
     "test": "test"
   },
   "devDependencies": {
-    "code": "^2.0.1",
-    "lab": "^8.0.0"
+    "code": "^4.0.0",
+    "lab": "^11.0.1"
   },
   "engines": {
     "node": ">=4.0.0"
@@ -27,6 +27,6 @@
   },
   "homepage": "https://github.com/simon-p-r/find-key#readme",
   "dependencies": {
-    "basic-utils": "^1.1.0"
+    "basic-utils": "^1.6.0"
   }
 }
