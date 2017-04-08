@@ -1,5 +1,7 @@
 #find-key
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/simon-p-r/find-key.svg)](https://greenkeeper.io/)
+
 Finds matching value of supplied key inside deep nested object
 
 [![Current Version](https://img.shields.io/npm/v/find-key.svg?maxAge=1000)](https://www.npmjs.org/package/find-key)
