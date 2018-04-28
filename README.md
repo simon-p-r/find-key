@@ -6,6 +6,7 @@ Finds matching value of supplied key inside deep nested object
 [![dependency Status](https://img.shields.io/david/simon-p-r/find-key.svg?maxAge=1000)](https://david-dm.org/simon-p-r/find-key)
 [![devDependency Status](https://img.shields.io/david/dev/simon-p-r/find-key.svg?maxAge=1000)](https://david-dm.org/simon-p-r/find-key)
 [![Build Status](https://travis-ci.org/simon-p-r/find-key.svg?branch=master)](https://travis-ci.org/simon-p-r/find-key)
+[![Windows Build Status](https://img.shields.io/appveyor/ci/simon-p-r/find-key/master.svg?label=windows&style=flat-square&maxAge=2592000)](https://ci.appveyor.com/project/simon-p-r/find-key)
 [![Coveralls](https://img.shields.io/coveralls/simon-p-r/find-key.svg?maxAge=1000)](https://coveralls.io/github/simon-p-r/find-key)
 
 
