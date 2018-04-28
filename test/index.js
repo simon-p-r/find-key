@@ -40,29 +40,29 @@ const obj = {
 
 describe('Find', () => {
 
-    it('should return undefined if no obj object is passed to function', (done) => {
+    it('should return undefined if no obj object is passed to function', () => {
 
         const result = Find();
         expect(result).to.be.undefined();
-        done();
-
     });
 
-    it('should return undefined if no key string is passed to function', (done) => {
+    it('should return undefined if null object is passed to function', () => {
+
+        const result = Find(null);
+        expect(result).to.be.undefined();
+    });
+
+    it('should return undefined if no key string is passed to function', () => {
 
         const result = Find(obj);
         expect(result).to.be.undefined();
-        done();
-
     });
 
-    it('should return values matching a key name', (done) => {
+    it('should return values matching a key name', () => {
 
         const result = Find(obj, 'format');
         expect(result).to.be.an.array();
         expect(result).to.have.length(4);
-        done();
-
     });
 
 });
