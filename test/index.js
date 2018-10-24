@@ -37,6 +37,18 @@ const obj = {
 
 };
 
+const expectedArrayResultOnPassingValidParameters = [
+    {
+        type: 'string',
+        format: 'lookup'
+    },
+    'lookup',
+    {
+        test: 'dbRef'
+    },
+    'dbRef'
+];
+
 
 describe('Find', () => {
 
@@ -63,6 +75,7 @@ describe('Find', () => {
         const result = Find(obj, 'format');
         expect(result).to.be.an.array();
         expect(result).to.have.length(4);
+        expect(result).to.equal(expectedArrayResultOnPassingValidParameters);
     });
 
 });
