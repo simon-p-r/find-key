@@ -1,5 +1,7 @@
 ###find-key changelog
 
+v2.1.3 - merged upstream changes to codebase and updated devDeps, also increased test coverage to node 10
+
 v2.0.0 - updated devDependencies lab and code, added use strict and ES6 features and added basic-utils for type checking
 
 v1.0.2 - fixed some lint issues, updated lab, changed results creation and updated travis
