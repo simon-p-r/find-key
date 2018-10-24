@@ -13,9 +13,9 @@
     "test": "test"
   },
   "devDependencies": {
-    "code": "^5.2.0",
-    "coveralls": "^3.0.0",
-    "lab": "^15.4.1"
+    "code": "^5.2.1",
+    "coveralls": "^3.0.2",
+    "lab": "^17.0.1"
   },
   "engines": {
     "node": ">=4.0.0"
